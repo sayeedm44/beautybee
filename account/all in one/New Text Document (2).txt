@@ -1,0 +1,150 @@
+Hello Team,
+
+I have found  this bugs in first name field while registering new account.
+
+bug:ssti
+
+
+while regirerting we will get 2 mails from nerdwallet 
+first -- thanks for joining nerdwallet
+second -- welcome to nerdwallet
+
+
+
+1) I tried for SSTI. I have given this payload {{5*5}}
+
+go to > https://www.nerdwallet.com/home/register 
+give {{5*5}} in first name 
+fill all deatials
+
+
+after more then one hour i got welcome mail.
+
+as u can see i got 25 in mail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+after finding SSTI i want to show some imapct on that i have 
+tried diffrent payload then i got this payload
+
+<img src="burpcolab/bc?callback=https://www.nerdwallet.com/home/register">
+ 
+after more one hour i have recived wellcome email
+there you can see broken image as i used img tag 
+
+as you can see i got response in colab 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

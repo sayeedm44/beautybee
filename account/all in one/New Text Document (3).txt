@@ -1,0 +1,12 @@
+subdomain enum
+Port scan
+nuceli scan
+waybackurls+gau
+nessus scan
+dir fuzz
+git recon
+goole dorks
+shodan&cnsys
+use gf 
+use xss automate tools
+use sqlmap or sqli automated tools

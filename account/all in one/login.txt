@@ -1,0 +1,11 @@
+Alternatives of alert except prompt and confirm:-
+
+sweetalert
+blurt
+brompt
+onbeforeunload
+brompt
+alert.call(null,1)
+confirm.call(null,1)
+prompt.call(null,1)
+alert.apply(null, [1])
