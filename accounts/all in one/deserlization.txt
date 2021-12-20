@@ -1,0 +1,50 @@
+I have worked in networking field for ore than 1 year, I'm currently learning web application pentesting from online multiple sources, I'm also doing internship from VTF,  I have got few hall of fames for reporting vulnerabilities like SSRF, subdomain takeover, open redirect, information disclosure. I have also got $750 bounty from hackerone for reporting a critical vulnerability in one of private program.
+--------------------------------------------------------------------------------
+I'm happy that Server-Side Request Forgery got added this time
+----------------------------------------------------------------------------------
+Right Click incept element and observe, such as eval() or innerHTML.
+
+Mitigation
+you should avoid allowing data from any untrusted source to be dynamically written to the HTML document.
+-------------------------------------------------------------------------------------
+SSRF attack, the attacker might cause the server to make a connection to internal-only services within the organization's infrastructure. In other cases, they may be able to force the server to connect to arbitrary external systems, potentially leaking sensitive data such as authorization credentials.
+
+mitigation
+implement firewall policies about what the hosts running the application are able to connect to
+-------------------------------------------------------------------
+XXE:
+XXE Injection attacks occur when an XML input containing references to an external entity is processed by a weakly configured XML parser. The attacker takes advantage of it by embedding malicious inline DOCTYPE definition in the XML data.
+
+XML Expansion attack:
+XML Entity Expansion injection also known as XML Bombs are Denial Of Service (DoS) attacks that benefit from valid and well-formed XML blocks that expand exponentially until they exhaust the server allocated resources
+---------------------------------------------------------------------------------
+
+
+
+1. Identify and detect serialization of objects in the website, It again differ according to the programming language
+2. Java uses java.io.Serializable binary serialization method which is used to read and deserialize data from an InputStream. 
+3. You can then pass the malicious objects through user input
+4. Here we can use two method to exploit and manipulate with objects -You can either edit the object directly in its byte stream form, or you can write a short script in the corresponding language to create and serialize the new object yourself.
+-------------------------------------------------------
+Cookie attributes:
+Cookies are pieces of information stored on the client side, which are sent to the server with every request made by the client
+CSP:
+Content Security Policy is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross-Site Scripting and data injection attacks.
+SOP:
+An SOP is a procedure specific to your operation that describes the activities necessary to complete tasks in accordance with industry regulations, provincial laws or even just your own standards for running your business.
+-------------------------------------------
+1)I will do directory FUZZ 
+2)If i got 403 forbidden to any directory. I try 403 bypass techniques.
+3)observer every page source code to find apikey, tokens, endpoints, secrets.
+4) use waybackurls to find some vulnerabilities like open redirect, XSS, LFI, SSRF, SQLI
+5) now i got for manual start Burp suite spider the examlpe.com 
+6) try to find SSRF, XSS, LFI, SQLI, Open redirect, Blind XSS
+----------------------------------------
+1)source code review
+2)capture request in burp suite
+3)try different methods on every parameter
+-------------------------------------------------
+Cross-Origin Resource Sharing (CORS)
+fix:
+Avoid using the header Access-Control-Allow-Origin: null
+--------------------------------------------------------

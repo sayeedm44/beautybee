@@ -1,0 +1,38 @@
+2017                                              2021                                     Owasp -Open Web Application Security Project
+Injection                                      Broken access contorl                       CWE-Common Weakness Enumeration  
+Broken authentication                          cryptographic failures                      CVE-Common Vulnerabilities and Exposures    2:30
+sensitive data expsure                         injection
+xml external entities (xxe)                    insecure design
+broken access contorl                          security misconfiguration
+security misconfiguration                      vulnerable and outdated components
+cross-site scripting                           identification and authentication failures
+insecure deserialization                       software and data integrity failures
+using components with known vulnerabilite      security logging and monitoring failures
+insufficient logging & monitoring              server side request forgery (ssrf)
+
+Broken accesss control            cryptographic failures                                         Injection
+>idor                            >weak encoding for password                                  >command injection
+>crsf                            > cleartext transmission of sensitive information             >sql injection                                                              
+>path travelsel                                                                                  >xml injection 
+                                                                                                  >crlf injection    
+                                                                                                    >ssti
+                                                                                                      >cross site scripting
+Insecure Design                                                                     Security misconfiguration
+>missing encrytion of sensitive data                                                  >cleartext storage of sensitive information in a cookie
+>use of get request method with senditive qury 
+> trusting HTTP permission methods on the server side
+>business logic errors                                                                                  
+Vulnerable and outdated componets                                              Software and data integrity failures
+>cves                                                                               >deserialization
+
+Identification and authentication failures                            Security logging and monitoring failures
+                                                                          >insufficient logging
+>improper authentication                                                   >insertion of sensitive information into log file
+>Origin validation error
+>session fixation
+>weak password requirements
+>weak password recovery mechanism for forgotten password												
+												
+
+											
+
